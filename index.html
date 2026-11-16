@@ -1,16 +1,38 @@
 <!doctype html>
-<html lang="<!-- figma:lang -->">
+<html lang="ru">
   <head>
-    <!-- figma:head-start -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><!-- figma:title --></title>
-    <!-- figma:head-end -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#050505" />
+    <meta name="description" content="VoidBarber — пространство мужского стиля в Москве. Стрижки, моделирование бороды и онлайн-запись." />
+    <title>Void Barber — мужской стиль и точность</title>
+    <link rel="icon" href="/favicon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
   </head>
   <body>
-    <!-- figma:body-start -->
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- figma:body-end -->
+    <div class="site-shell">
+      <header class="header">
+        <a class="logo" href="#home" aria-label="VoidBarber — главная">VOID<span>/</span>BARBER</a>
+        <nav class="nav" id="site-nav" aria-label="Основная навигация">
+          <a href="#home">Главная</a><a href="#about">О нас</a><a href="#services">Услуги</a><a href="#contacts">Контакты</a><a href="#contacts">Соц-сети</a>
+          <button class="nav-book" data-booking>Записаться <svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg></button>
+        </nav>
+        <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+      </header>
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-image-wrap"><img src="https://images.unsplash.com/photo-1621645582931-d1d3e6564943?auto=format&fit=crop&w=1800&q=88" alt="Кресло в интерьере современного барбершопа" /><div class="hero-shade"></div></div>
+          <div class="hero-content"><div class="hero-kicker" data-reveal><span>Барбершоп нового поколения</span><span>Москва · 2026</span></div><h1 data-reveal>VOID<span>BARBER</span></h1><div class="hero-bottom" data-reveal><p>Место, где стиль становится характером. Современные мужские стрижки, точные линии и внимание к каждой детали.</p><div class="hero-actions"><a class="button button-light" href="#about">О нас <svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg></a><button class="button button-ghost" data-booking>Записаться</button></div></div></div><div class="scroll-mark"><span>Листайте</span><i></i></div>
+        </section>
+        <section class="about section" id="about"><div class="section-tag" data-reveal><span>01</span><span>О нас</span></div><div class="about-layout"><div class="about-image" data-reveal><img src="https://images.unsplash.com/photo-1672257493626-038f96997ade?auto=format&fit=crop&w=1800&q=88" alt="Тёмный интерьер премиального барбершопа с креслами и зеркалами" /><span class="image-caption">Пространство Void / Москва</span></div><div class="about-copy"><h2 data-reveal>Больше, чем<br />просто стрижка</h2><p class="lead" data-reveal>VoidBarber — пространство мужского стиля, где внимание к деталям, профессионализм и индивидуальный подход становятся основой каждой работы. Мы создаём образ, который подчёркивает характер и уверенность.</p><div class="stats" data-reveal><div><strong>500+</strong><span>отзывов</span></div><div><strong>1 200+</strong><span>клиентов</span></div><div><strong>5+</strong><span>лет опыта</span></div></div></div></div></section>
+        <section class="services section" id="services"><div class="section-tag light-tag" data-reveal><span>02</span><span>Услуги и цены</span></div><div class="services-heading" data-reveal><h2>Наши услуги</h2><p>Точность, стиль и внимание<br />к деталям в каждой работе.</p></div><div id="service-groups"></div></section>
+        <section class="contacts section" id="contacts"><div class="section-tag" data-reveal><span>03</span><span>Контакты</span></div><div class="contacts-layout"><div class="contacts-intro" data-reveal><h2>Всегда<br />на связи</h2><p>Следи за нашими работами, знакомься с новыми образами и записывайся на удобное время. Мы всегда открыты к общению.</p></div><div class="social-list" data-reveal><a href="https://vk.com/" target="_blank" rel="noreferrer"><svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg><span class="social-name">ВКонтакте</span><span class="social-detail">vk.com/voidbarber</span></a><a href="https://t.me/" target="_blank" rel="noreferrer"><svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg><span class="social-name">Telegram</span><span class="social-detail">@voidbarber</span></a><a href="https://instagram.com/" target="_blank" rel="noreferrer"><svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg><span class="social-name">Instagram</span><span class="social-detail">@voidbarber</span></a><a href="https://wa.me/79997772211" target="_blank" rel="noreferrer"><svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg><span class="social-name">WhatsApp</span><span class="social-detail">+7 999 777-22-11</span></a><a href="mailto:hello@voidbarber.ru"><svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg><span class="social-name">Email</span><span class="social-detail">hello@voidbarber.ru</span></a><a href="tel:+79997772211"><svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg><span class="social-name">Телефон</span><span class="social-detail">+7 999 777-22-11</span></a></div></div></section>
+      </main>
+      <footer class="footer"><div class="footer-main"><div><a class="footer-logo" href="#home">VOID/BARBER</a><p>Мужской стиль. Точность. Характер.<br />Пространство, где каждая деталь имеет значение.</p></div><div class="footer-meta"><span>Контакты</span><a href="tel:+79997772211">+7 999 777-22-11</a><a href="mailto:hello@voidbarber.ru">hello@voidbarber.ru</a></div><button class="footer-book" data-booking>Записаться <svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg></button></div><div class="footer-bottom"><span>© 2026 Void Barber. Все права защищены.</span><span>Москва · Ежедневно 10:00–22:00</span></div></footer>
+    </div>
+    <div id="modal-root"></div>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
