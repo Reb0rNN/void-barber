@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="VoidBarber — барбершоп нового поколения. Современные стрижки, точные линии и внимание к каждой детали."
+    />
+    <meta name="theme-color" content="#050505" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="VoidBarber" />
+    <meta property="og:title" content="VoidBarber — Барбершоп нового поколения" />
+    <meta
+      property="og:description"
+      content="VoidBarber — барбершоп нового поколения. Современные стрижки, точные линии и внимание к каждой детали."
+    />
+    <title>VoidBarber — Барбершоп нового поколения</title>
+    <link rel="icon" href="data:," />
+    <link rel="preload" href="./assets/fonts/Inter-VariableFont_opsz,wght.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/images/voidbarber-hero-1621645582931.webp" as="image" type="image/webp" />
+    <link rel="stylesheet" href="./assets/css/tokens.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <link rel="stylesheet" href="./assets/css/components.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <script type="module" src="./assets/js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+    <div class="site-shell">
+      <header class="header">
+        <a class="logo" href="#home" aria-label="Главная" data-brand></a>
+        <nav class="nav" id="primary-navigation" aria-label="Основная навигация">
+          <a href="#home">Главная</a>
+          <a href="#about">О нас</a>
+          <a href="#services">Услуги</a>
+          <a href="#contacts">Контакты</a>
+          <a href="#socials">Соц-сети</a>
+          <button class="nav-book" type="button" data-book-button>
+            Записаться
+            <svg aria-hidden="true" class="arrow" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </button>
+        </nav>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Открыть меню"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+      </header>
+
+      <main id="main-content">
+        <section class="hero" id="home" aria-labelledby="hero-title">
+          <div class="hero-image-wrap" aria-hidden="true">
+            <img
+              src="./assets/images/voidbarber-hero-1621645582931.webp"
+              width="1800"
+              height="2250"
+              alt=""
+              fetchpriority="high"
+            />
+            <div class="hero-shade"></div>
+          </div>
+          <div class="hero-content">
+            <div class="hero-kicker" data-reveal>
+              <span>Барбершоп нового поколения</span>
+              <span>Москва · <span data-current-year>2026</span></span>
+            </div>
+            <h1 id="hero-title" data-reveal><span data-brand-solid></span><span data-brand-outline></span></h1>
+            <div class="hero-bottom" data-reveal>
+              <p>
+                Место, где стиль становится характером. Современные мужские стрижки,
+                точные линии и внимание к каждой детали.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-light" href="#about">
+                  О нас
+                  <svg aria-hidden="true" class="arrow" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5" />
+                  </svg>
+                </a>
+                <button class="button button-ghost" type="button" data-book-button>
+                  Записаться
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-mark" aria-hidden="true"><span>Листайте</span><i></i></div>
+        </section>
+
+        <section class="about section" id="about" aria-labelledby="about-title">
+          <div class="section-tag" data-reveal><span>01</span><span>О нас</span></div>
+          <div class="about-layout">
+            <div class="about-image" data-reveal>
+              <img
+                src="./assets/images/voidbarber-about-1672257493626.webp"
+                width="1800"
+                height="1135"
+                alt="Интерьер барбершопа с креслами и зеркалами"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="image-caption">Пространство Void / Москва</span>
+            </div>
+            <div class="about-copy">
+              <h2 id="about-title" data-reveal>Больше, чем<br />просто стрижка</h2>
+              <p class="lead" data-reveal>
+                VoidBarber — пространство мужского стиля, где внимание к деталям,
+                профессионализм и индивидуальный подход становятся основой каждой
+                работы. Мы создаём образ, который подчёркивает характер и уверенность.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="services section" id="services" aria-labelledby="services-title">
+          <div class="section-tag light-tag" data-reveal>
+            <span>02</span><span>Услуги и цены</span>
+          </div>
+          <div class="services-heading" data-reveal>
+            <h2 id="services-title">Наши услуги</h2>
+            <p>Точность, стиль и внимание<br />к деталям в каждой работе.</p>
+          </div>
+          <div id="services-content" aria-live="polite"></div>
+        </section>
+
+        <section class="contacts section" id="contacts" aria-labelledby="contacts-title">
+          <div class="section-tag" data-reveal><span>03</span><span>Контакты</span></div>
+          <div class="contacts-layout">
+            <div class="contacts-intro" data-reveal>
+              <h2 id="contacts-title">Всегда<br />на связи</h2>
+              <p>
+                Следи за нашими работами, знакомься с новыми образами и записывайся
+                на удобное время. Мы всегда открыты к общению.
+              </p>
+              <address class="contact-address" data-site-address></address>
+            </div>
+            <div class="social-list" id="socials" data-contact-links aria-label="Способы связи" data-reveal></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-main">
+          <div>
+            <a class="footer-logo" href="#home" data-footer-brand>VOID/BARBER</a>
+            <p>
+              Мужской стиль. Точность. Характер.<br />
+              Пространство, где каждая деталь имеет значение.
+            </p>
+          </div>
+          <div class="footer-meta">
+            <span>Контакты</span>
+            <div data-footer-contacts></div>
+          </div>
+          <button class="footer-book" type="button" data-book-button>
+            Записаться
+            <svg aria-hidden="true" class="arrow" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-current-year>2026</span> <span data-copyright-brand>VoidBarber</span>. Все права защищены.</span>
+          <span>Мужской стиль · Точность · Характер</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

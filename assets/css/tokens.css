@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  color: #f5f5f3;
+  background: #050505;
+  font-family: "Inter", Arial, sans-serif;
+  font-synthesis: none;
+
+  /* Surfaces and text colors sampled from the Figma Make stylesheet. */
+  --color-black: #050505;
+  --color-card: #151515;
+  --color-services: #0c0c0c;
+  --color-white: #f5f5f3;
+  --color-muted: #9b9b97;
+  --color-muted-light: #757572;
+  --color-line: #292929;
+  --color-line-soft: #30302e;
+  --color-line-strong: #565653;
+  --color-about: #f1f1ee;
+  --color-ink: #090909;
+  --color-ink-muted: #595956;
+  --color-ink-soft: #62625e;
+  --color-line-light: #c8c8c4;
+  --color-white-hover: #cfcfcb;
+  --color-focus: #ffffff;
+  --color-muted-lightest: #777773;
+  --color-dark-surface: #111111;
+  --color-button-ink: #080808;
+  --color-interaction-border: #646461;
+  --color-modal-border: #303030;
+  --color-ink-strong: #111111;
+  --color-form-error: #d58b8b;
+  --color-form-error-text: #f0aaaa;
+
+  --font-family-base: "Inter", Arial, sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-size-body: 16px;
+  --font-size-body-small: 14px;
+  --font-size-nav: 12px;
+  --font-size-label: 10px;
+  --font-size-display: clamp(70px, 13.7vw, 210px);
+  --font-size-heading: clamp(48px, 6.1vw, 92px);
+  --font-size-card-title: clamp(19px, 1.6vw, 24px);
+  --line-height-heading: 0.98;
+  --letter-spacing-display: -0.085em;
+  --letter-spacing-heading: -0.07em;
+
+  --container-width: 1320px;
+  --page-gutter: clamp(24px, 5.2vw, 80px);
+  --section-space-y: 148px;
+  --section-space-y-mobile: 96px;
+  --space-1: 8px;
+  --space-2: 10px;
+  --space-3: 12px;
+  --space-4: 14px;
+  --space-5: 16px;
+  --space-6: 18px;
+  --space-7: 24px;
+  --space-8: 32px;
+
+  --radius-none: 0;
+  --radius-circle: 50%;
+  --border-width: 1px;
+  --shadow-modal: 0 28px 100px rgb(0 0 0 / 50%);
+
+  --duration-quick: 150ms;
+  --duration-ui: 220ms;
+  --duration-menu: 250ms;
+  --duration-card: 260ms;
+  --duration-modal: 320ms;
+  --duration-reveal: 700ms;
+  --duration-image: 800ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-image: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --z-header: 50;
+  --z-menu-toggle: 55;
+  --z-modal: 100;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  background: var(--color-black);
+  font-family: var(--font-family-base);
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  color: var(--color-black);
+  background: var(--color-white);
+}
+
+img,
+picture,
+svg {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
